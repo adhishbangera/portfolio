@@ -1,6 +1,11 @@
 import React from "react";
+import Skills from "../components/Skills";
 
 const Work = () => {
-  return <>Work Page</>;
+  return (
+    <>
+      <Skills />
+    </>
+  );
 };
 export default Work;
