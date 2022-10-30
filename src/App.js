@@ -1,11 +1,21 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Content from "./components/Content";
+import Home from "./container/Home";
+import About from "./container/About";
+import Work from "./container/Work";
+import { Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Content />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
+        </Routes>
+      </div>
     </div>
   );
 }
