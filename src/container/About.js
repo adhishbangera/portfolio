@@ -43,7 +43,7 @@ const About = () => {
           <img className="object-contain h-45 rounded-lg" src={about} />
         </div>
       </div>
-      {/* <Skills /> */}
+      <Skills />
     </div>
   );
 };
