@@ -14,7 +14,7 @@ const Work = () => {
   const portfolioDesc =
     "This is my personal portfolio website where I have described about myself, my work experience, things im passionate about and projects.";
   const amazonCloneDesc =
-    "This is a clone of popular shopping website Amazon which i had build to learn more about ReactJS and its various concepts like component based approach, routing and context API.";
+    "This is a clone of popular shopping website Amazon which i have build to learn more about ReactJS and its various concepts like component based approach, routing and context API along with Firebase authentication and deployment.";
   const foodOrderingAppDesc =
     "This is a food ordering app where users are able to select and add the food items they want which will later be displayed in the UI as a total list with the respective amount for the total order.";
   return (
@@ -57,6 +57,7 @@ const Work = () => {
           p1={"ReactJS"}
           p2={"Material UI"}
           p3={"Firebase"}
+          link={"https://clone-3dbfe.web.app/"}
         />
         <Cards
           image={food}

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsSun } from "react-icons/bs";
 import adhish from "../assets/adhish.jpg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [darkMode, setDarkMode] = useState(false);
   const onButtonClick = () => {
     fetch("adhishCV.pdf").then((response) => {
       response.blob().then((blob) => {
@@ -53,9 +54,12 @@ const Navbar = () => {
           </button>
 
           {/* <button>Resume</button> */}
-          <button className="hover:bg-gray-100 pb-2 p-1 rounded-md  hover:text-cyan-700">
+          {/* <button
+            className="hover:bg-gray-100 pb-2 p-1 rounded-md  hover:text-cyan-700"
+            onClick={() => setDarkMode(!darkMode)}
+          >
             <BsSun />
-          </button>
+          </button> */}
         </div>
       </nav>
     </>

@@ -36,7 +36,7 @@ const Home = () => {
         </a>
         <a
           className="transition ease-in-out delay-100 hover:-translate-y-2 hover:scale-150"
-          href="adhishbangera18@gmail.com"
+          href="https://adhishbangera18@gmail.com"
         >
           <SiGmail />
         </a>

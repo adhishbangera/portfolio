@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineLink } from "react-icons/ai";
 
 const Cards = (props) => {
   return (
@@ -9,7 +10,15 @@ const Cards = (props) => {
         alt="Sunset in the mountains"
       />
       <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{props.title}</div>
+        <div class="font-bold text-xl mb-2 flex gap-3">
+          {props.title}
+          {props.link && (
+            <a href={props.link}>
+              <AiOutlineLink />
+            </a>
+          )}
+        </div>
+
         <p class="text-gray-700 text-base">{props.desc}</p>
       </div>
       <div class="px-6 pt-4 pb-2">
